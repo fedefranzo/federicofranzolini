@@ -34,14 +34,14 @@ app.post("/contact.php",function(req, res){
         phone: phone,
         message: message
     });
-    
+
     contact.save(function(){
         res.redirect("/");
 
     });
 });
 
-app.listen(/*process.end.PORT || 3000*/ 3000, function(){
+app.listen(process.end.PORT || 3000, function(){
     console.log("El servidor esta corriendo en el puerto 3000");
 });
 
