@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect("mongodb://localhost:27017/contactfzDB", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-federico:Patulina01@cluster0.rq3t7.mongodb.net/contactfzDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const contactSchema = {
     name: String,
