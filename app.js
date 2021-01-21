@@ -41,7 +41,7 @@ app.post("/contact.php",function(req, res){
     });
 });
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen((process.env.PORT || 3000), function(){
     console.log("El servidor esta corriendo en el puerto 3000");
 });
 
