@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect("mongodb+srv://admin-federico:Patulina01@cluster0.rq3t7.mongodb.net/contactfzDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-federico:Patulina01@cluster0.rq3t7.mongodb.net/contactfzDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const contactSchema = {
     name: String,
@@ -18,8 +18,10 @@ const contactSchema = {
 
 const Contact = new mongoose.model("Contact", contactSchema);
 
-app.get("/", function(req, res){
-    res.render("index");
+
+
+app.get('/', function(req, res) {
+    res.render('index');
 });
 
 app.post("/contact.php",function(req, res){
@@ -37,16 +39,15 @@ app.post("/contact.php",function(req, res){
 
     contact.save(function(){
         res.redirect("/");
-
     });
 });
 
-let port = process.env.PORT;
-if (port == null || port==""){
-    port=3000;
-};
+//let port = process.env.PORT;
+//if (port == null || port==""){
+//    port=3000;
+//};
 
-app.listen(port, function(){
+app.listen(process.env.PORT, function(){
     console.log("El servidor esta corriendo");
 });
 
