@@ -40,6 +40,7 @@ app.post("/contact.php",function(req, res){
     contact.save(function(){
         res.redirect("/");
     });
+    res.render("contact.php");
 });
 
 //let port = process.env.PORT;
