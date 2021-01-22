@@ -24,7 +24,11 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.post("/contact.php",function(req, res){
+app.get("/contact", function(req, res){
+    res.render("contact");
+});
+
+app.post("/",function(req, res){
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.phone;
@@ -40,7 +44,7 @@ app.post("/contact.php",function(req, res){
     contact.save(function(){
         res.redirect("/");
     });
-    res.render("contact.php");
+    res.render("contact");
 });
 
 //let port = process.env.PORT;
