@@ -46,7 +46,7 @@ app.post("/",function(req, res){
 //    port==3000;
 // };
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("El servidor esta corriendo");
 });
 
