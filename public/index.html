@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Bootstrap 4-->
-
+    <!--Bootstrap and scripts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <!--Internal CSS-->
 
     <link rel="stylesheet" href="css/styles.css">
@@ -49,26 +47,26 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-fill w-100">
-                <li class="nav-item active">
+                <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="#home" class="nav-link" >Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="#el-guia" class="nav-link">El Guía</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="#actividades" class="nav-link">Actividades</a>
                 </li>
 
                 <a class="navbar-brand" href="index.html"><img id="logo2" src="imagenes/Logo-WEB.png" alt="Logo"></a>
 
 
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="" class="nav-link">Calendario</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="#el-youtuber" class="nav-link" >El Youtuber</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="#contact" class="nav-link" >Contacto</a>
                 </li>
             </ul>
@@ -77,7 +75,7 @@
 
     <section>
         <!-- Main Section-->
-        <div class="container-fluid">
+        <div class="container-fluid main-section">
             <div class="row">
                 <!--Home-->
                 <div class="col-lg-12 home" id="home">
@@ -119,16 +117,16 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                         </a>
-                      </div>
+                      </div><br>
 
 
-                    <h2>Mira profundamente en la naturaleza y entonces comprenderas todo mejor</h2><br>
+                    <h4>Mira profundamente en la naturaleza y entonces comprenderas todo mejor</h4><br>
                     <h5>Albert Einstein</h5>
                 </div>
                 <!--El Guia-->
                 <div class="col-lg-12 el-guia" id="el-guia" >
-                    <h3>El Guía</h3><br>
-                    <h5>¿Que es un guia de montaña y que no es un guia de montaña?
+                    <h4>El Guía</h4><br>
+                    <p>¿Que es un guia de montaña y que no es un guia de montaña?
                         La profesión del guía de montaña es tan antigua como la historia de los deportes que se practican en ella.
                         
                         Los primeros guías aparecieron a mediados del S.XVIII en Francia, el 8 de agosto de 1786 el cristalero Jacques Balmat el cual hizo de guía y el doctor Michel Gabriel Paccard hicieron historia al lograr el primer ascenso al Mont Blanc. El hito pasó a formar parte de la historia del alpinismo. En España la primera ascensión guiada conocida fue en 1904 con una escalada al Naranjo de Bulnes (Picu Urriellu) en los Picos de Europa, por parte de Pedro Pidal y el guia Gregorio Pérez, conocido como “El Cainejo”.
@@ -139,11 +137,11 @@
                         
                         Los guías de montaña que forman parte de la AEGM cuentan con titulación oficial que les acredita para la realización de labores de conducción y guiaje de personas en el medio natural.
                         
-                        Toda la actividad profesional está sujeta al Código Ético en vigor de la UIAGM.</h5><br>
+                        Toda la actividad profesional está sujeta al Código Ético en vigor de la UIAGM.</p><br>
                 </div>
                 <!--Actividades-->
                 <div class="col-lg-12 actividades" id="actividades">
-                    <h3>Actividades</h3><br>
+                    <h4>Actividades</h4><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi ea ab, architecto maiores dolorum aperiam ipsam molestias. Delectus aut itaque ratione commodi quod dolore eveniet odio ducimus reprehenderit ullam?
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eveniet reiciendis esse blanditiis qui quam ipsum eos, optio adipisci a voluptate provident veniam non animi vero repudiandae culpa ipsam temporibus!
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, voluptatum praesentium autem odit iure tempora commodi ipsa optio eum sint laboriosam. Error pariatur dolorem tempore magni qui dolorum quod expedita!
@@ -152,8 +150,7 @@
                 </div>
                 <!--El Youtuber-->
                 <div class="col-lg-12 el-youtuber" id="el-youtuber">
-                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=FedericoFranzolini" width="480" height="400"></iframe>
-                    <h3>El Youtuber</h3><br>
+                    <h4>El Youtuber</h4><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi ea ab, architecto maiores dolorum aperiam ipsam molestias. Delectus aut itaque ratione commodi quod dolore eveniet odio ducimus reprehenderit ullam?
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eveniet reiciendis esse blanditiis qui quam ipsum eos, optio adipisci a voluptate provident veniam non animi vero repudiandae culpa ipsam temporibus!
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, voluptatum praesentium autem odit iure tempora commodi ipsa optio eum sint laboriosam. Error pariatur dolorem tempore magni qui dolorum quod expedita!
@@ -161,12 +158,55 @@
                     </p>
                 </div>
                 <!--Contacto-->
+                <div class="col-lg-12 div-contact">
+                    <div class="col-lg-12 div-title" id="contact"><h4>Contacto</h4>
+                    </div>
+                    <div class="col-lg-12 div-content">
+                        <div class="col-lg-3 div1"></div><div class="col-lg-3 div2"><img src="imagenes/Logo-WEB.png" alt="" width="120px"><br><br>
+                            <span class="bold">Federico Franzolini</span><br>
+                            <span>Bariloche, RN, Argentina.</span><br>
+                            <span><a class="link-contact" href="https://wa.me/5491151405236" target="blanck">+54 9 11 51405236</a></span><br>
+                            <span><a class="link-contact" href="mailto:fede.franzo@gmail.com">fede.franzo@gmail.com</a></span><br><br>
+                            <span><a href=""><img src="imagenes/icon-facebook-white.png" alt="" width="23px"></a></span>
+                            <span><a href=""><img src="imagenes/icon-ig-bw 2.png" alt="" width="23px">&nbsp;</a></span>
+                            <span><a href=""><img src="imagenes/icon-youtube-white.png" alt="" width="23px"></a></span></div><div class="col-lg-3 div3"><form action="/" method="POST" name="formContact">
+                            <div class="form-group"><input type="text" id="name" name="name" placeholder="Nombre y Apellido" class="required"></div>
+                            <div class="form-group"><input type="text" id="email" name="email" placeholder="Email" class="required"></div>
+                            <div class="form-group"><input type="text" id="phone" name="phone" placeholder="Teléfono"></div>
+                            <div class="form-group"><textarea  id="message"name="message" placeholder="Mensaje" class="required"></textarea></div>
+                            <div class="form-group"><input class="message-button btn" type="submit" name="send" value="Enviar Mensaje" class="btn btn-primary"></div>
+                        </form></div><div class="col-lg-3 div4"></div>
+                    </div>
+                </div>
 
-                            <div class="col-lg-12" id="contact">
-                                <h2>Contactanos</h2>
-                            </div>
-                            <div class="col-lg-3"></div>
-                            <div class="col-lg-3" id="contact-info">
+                <!-- <div class="container col-lg-12 contacto" id="contact">
+                    <div class=" col-lg-12 contact-title"><h2>Contacto</h2></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3 contact-info" id="contact-info">
+                        <img src="imagenes/Logo-WEB.png" alt="" width="120px"><br><br>
+                        <span class="bold">Federico Franzolini</span><br>
+                        <span>Bariloche, RN, Argentina.</span><br>
+                        <span><a class="link-contact" href="https://wa.me/5491151405236" target="blanck">+54 9 11 51405236</a></span><br>
+                        <span><a class="link-contact" href="mailto:fede.franzo@gmail.com">fede.franzo@gmail.com</a></span><br><br>
+                        <span><a href=""><img src="imagenes/icon-facebook-white.png" alt="" width="23px"></a></span>
+                        <span><a href=""><img src="imagenes/icon-ig-bw 2.png" alt="" width="23px">&nbsp;</a></span>
+                        <span><a href=""><img src="imagenes/icon-youtube-white.png" alt="" width="23px"></a></span>                
+                    </div><div class="col-lg-3 contact-form" id="contact-form">
+                        <form action="/" method="POST" name="formContact">
+                            <div class="form-group"><input type="text" id="name" name="name" placeholder="Nombre y Apellido" class="required"></div>
+                            <div class="form-group"><input type="text" id="email" name="email" placeholder="Email" class="required"></div>
+                            <div class="form-group"><input type="text" id="phone" name="phone" placeholder="Teléfono"></div>
+                            <div class="form-group"><textarea  id="message"name="message" placeholder="Mensaje" class="required"></textarea></div>
+                            <div class="form-group"><input type="submit" name="send" value="Enviar Mensaje" class="btn btn-primary"></div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div> -->
+<!-- 
+                <div class="col-lg-12 contacto" id="contact">
+                    <h2>Contactanos</h2>
+                    <div class="col-lg-2"><p></p></div>
+                    <div class="contact-info" id="contact-info">
                                 <img src="imagenes/Logo-WEB.png" alt="" width="120px"><br><br>
                                 <span class="bold">Federico Franzolini</span><br>
                                 <span>Bariloche, RN, Argentina.</span><br>
@@ -175,8 +215,8 @@
                                 <span><a href=""><img src="imagenes/icon-facebook-white.png" alt="" width="23px"></a></span>
                                 <span><a href=""><img src="imagenes/icon-ig-bw 2.png" alt="" width="23px">&nbsp;</a></span>
                                 <span><a href=""><img src="imagenes/icon-youtube-white.png" alt="" width="23px"></a></span>
-                            </div>
-                            <div class="col-lg-3" id="contact-form">
+                    </div>
+                    <div class= id="contact-form">
                                 <form action="/" method="POST" name="formContact">
                                     <div class="form-group"><input type="text" id="name" name="name" placeholder="Nombre y Apellido" class="required"></div>
                                     <div class="form-group"><input type="text" id="email" name="email" placeholder="Email" class="required"></div>
@@ -184,10 +224,9 @@
                                     <div class="form-group"><textarea  id="message"name="message" placeholder="Mensaje" class="required"></textarea></div>
                                     <div class="form-group"><input type="submit" name="send" value="Enviar Mensaje" class="btn btn-primary"></div>
                                 </form>
-                            </div>
-                            <div class="col-lg-3">
-
-                            </div>
+                    </div>
+                    <div class="col-lg-2"><p></p></div>
+                </div> -->
 
         </div>
     </section>

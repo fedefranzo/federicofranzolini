@@ -18,8 +18,6 @@ const contactSchema = {
 
 const Contact = new mongoose.model("Contact", contactSchema);
 
-
-
 app.get('/', function(req, res) {
     res.render('index');
 });
@@ -43,12 +41,12 @@ app.post("/",function(req, res){
 
 });
 
-//let port = process.env.PORT;
-//if (port == null || port==""){
-//    port=3000;
-//};
+// let port = process.env.PORT;
+// if (port == null || port==""){
+//    port==3000;
+// };
 
-app.listen(process.env.PORT, function(){
+app.listen(3000, function(){
     console.log("El servidor esta corriendo");
 });
 
