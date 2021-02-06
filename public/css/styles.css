@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 120px;
+    scroll-padding-top: 250px;
 }
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
@@ -8,8 +8,14 @@ html {
 	}
 }
 
+@media screen and (max-width: 991px) {
+    html {
+        scroll-padding-top: 410px;
+    }
+}
+
 body {
-background-image: linear-gradient(to bottom, #63aabc, #f9f3ec);
+    background-image: linear-gradient(to bottom, #63aabc, #f9f3ec);
 }
 
 @font-face {
@@ -24,7 +30,7 @@ section {
     width: 100%;
     margin: 15px 0px 15px 0px;
     padding: 0px;
-    position: relative;
+    position: flex;
 }
 .home{
     height: 100vh;
@@ -271,9 +277,9 @@ p {
 }
 @media screen and (max-width: 991px) {
     p {
-        font-size: 20px;
+        font-size: 17px;
     }
     h4{
-        font-size: 25px;
+        font-size: 22px;
     }
 }

@@ -41,12 +41,17 @@ app.post("/",function(req, res){
 
 });
 
+let port = process.env.PORT;
+if (port == null || port == ""){
+    port = 3000;
+};
+
 // let port = process.env.PORT;
 // if (port == null || port==""){
 //    port==3000;
 // };
 
-app.listen(process.env.PORT, function(){
-    console.log("El servidor esta corriendo");
+app.listen(port, function(req, res){
+    console.log("El servidor esta corriendo correctamente");
 });
 
